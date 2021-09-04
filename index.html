@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" type="text/css" href="index.css"/>
+	<title>Numero Aleatorio</title>
+</head>
+		<body background="fondo.jpg">
+			
+				<h1> Numero Aleatorio</h1>
+				<p>Crear un programa que genere un numero aletorio, y que el usuario intente<br>
+				adivinar que numero genero,el programa debe dar ayudas como por ejemplo: el <br>
+				numero que añadiste es muy bajo, o el numero que añadiste es muy alto intenta<br>
+			    nuevamente hasta lograr obtener el numero</p>
+			
+			<div class="content">
+				<p></p>
+				<div class="formulario">
+					<p>Ingresa un numero del 1 al 100:</p><br>
+						<label for="caja1">Ingrese el número: </label><input name="caja1" id="caja1" type="text"/>
+						<button name="boton1" id="boton1" onclick="compara()">Aceptar</button>
+						<button name="boton2" id="boton2" onclick="location.reload()">Volver a intentar</button>
+				</div>
+				<div class="result" id="resultado">
+					<h3 id="texto1">El numero es </h3>
+					<h3 id="num">50</h3>
+					<p id="usados">Numeros Ocupados:</p>
+					<p id="intentos"> Intentos:0</p>
+				
+				</div>
+			</div>
+			<script src="main.js"></script>
+		</body>
+</html>
